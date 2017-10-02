@@ -1,0 +1,108 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#catalog .col-md-4 {
+    width: 300px;
+    height: 300px;
+    margin: 10px auto
+}
+#catalog .col-md-4:nth-child(2) {
+    margin: auto;
+}
+#pre-footer .container {
+    position: static;
+    background: none
+}
+footer li {
+    width: 100%;
+    margin: 10px 0
+}
+#plastic-windows {
+    padding: 40px 5px 80px 5px
+}
+.call-to-action-button {
+    font-size: 10px
+}
+#about-company .col-md-6, #plastic-windows .col-md-6 {
+    padding: 0 15px
+}
+#about-company h2 {
+    margin-top: 15px
+}
+#topnavmobile {
+    display: block
+}
+header {
+    display: none
+}
+#top-section {
+    margin: 0;
+    height: auto!important;
+    padding: 15px;
+    background-attachment: fixed
+}
+.top-section-content {
+    margin: 50px 0 100px 0
+}
+.top-section-content p {
+    font-size: 20px
+}
+.top-section-content a {
+    font-size: 18px
+}
+.nav-portfolio li {
+    border-radius: 0!important;
+    width: 100%;
+    padding: 20px 0
+}
+.nav-portfolio li:first-child {
+    border: solid 1px #cccccc;
+}
+.nav-portfolio li:last-child {
+    border: solid 1px #cccccc;
+}
+.nav-portfolio li:not(:first-child) {
+    border: solid 1px #cccccc;
+    border-top: none
+}
+#contact-card {
+    position: static;
+    width: auto;
+    margin: 0;
+    box-shadow: none
+}
+#complectation li {
+    margin: 5px 0;
+    display: block
+}
+#other-options td {
+    width: 100% !important;
+    display: block;
+    margin: 10px;
+}
+.demo-product-height, .demo-product-width {
+    display: none;
+}
+.summary {
+    padding: 10px;
+}
+.add-to-cart, .checkout {
+    margin: 5px 0
+}
+.price .col-md-6 {
+    padding: 0 20px
+}
+#contact-popup {
+    width: 100%;
+    padding: 5%
+}
+#top-section {
+    background: url("../img/background-home.png")
+}
+#portfolio-body #top-section {
+    background: url("../img/background-home.png")
+}
+#contacts-body #top-section {
+    background: url("../img/background-home.png")
+}
