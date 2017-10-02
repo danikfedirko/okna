@@ -46,6 +46,13 @@ $(document).ready(function () {
     $("#otliv-list li").click(function () {
          var text = $(this).text();
          $("#otliv-arg").text(text);
+         if (text === "70") {
+             $("#otliv-price").text(150);
+         } else if (text === "150") {
+             $("#otliv-price").text(300);
+         } else {
+             $("#otliv-price").text(325);
+         }
          $("#otliv-list").hide()
     });
 
@@ -61,6 +68,13 @@ $(document).ready(function () {
     $("#podokkonnik-list li").click(function () {
         var text = $(this).text();
         $("#podokkonnik-arg").text(text);
+        if (text === "150") {
+            $("#podokkonnik-price").text(317);
+        } else if (text === "200") {
+            $("#podokkonnik-price").text(350);
+        } else {
+            $("#podokkonnik-price").text(375);
+        }
         $("#podokkonnik-list").hide()
     });
 
@@ -76,6 +90,13 @@ $(document).ready(function () {
     $("#odkosy-list li").click(function () {
         var text = $(this).text();
         $("#odkosy-arg").text(text);
+        if (text === "200") {
+            $("#odkosy-price").text(1891);
+        } else if (text === "250") {
+            $("#odkosy-price").text(2235);
+        } else {
+            $("#odkosy-price").text(2450);
+        }
         $("#odkosy-list").hide()
     });
 
