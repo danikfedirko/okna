@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/calculator.js"></script>
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -21,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
 
 </head>
-<div id="portfolio-body">
+<body id="portfolio-body">
 
 <!--Top section-->
 <div id="top-section" class="margin-section">
@@ -82,23 +83,23 @@
             <h3>Тип окна:</h3>
             <p>Выберите подходящий тип окна</p>
             <div class="row">
-                <div class="col-md-3 type-option">
+                <div id="type-opt-1" class="col-md-3 type-option">
                     <img src="img/config/okno-1.png"><br>
                     Одностворчатое
                 </div>
-                <div class="col-md-3 type-option">
+                <div id="type-opt-2" class="col-md-3 type-option">
                     <img src="img/config/okno-2.png"><br>
                     Двухстворчатое
                 </div>
-                <div class="col-md-3 type-option active">
+                <div id="type-opt-3" class="col-md-3 type-option active">
                     <img src="img/config/okno-3.png"><br>
                     Трехстворчатое
                 </div>
-                <div class="col-md-3 type-option">
+                <div id="type-opt-4" class="col-md-3 type-option">
                     <img src="img/config/okno-4.png"><br>
                     Балконный блок
                 </div>
-                <div class="col-md-3 type-option">
+                <div id="type-opt-5" class="col-md-3 type-option">
                     <img src="img/config/okno-5.png"><br>
                     Балконная дверь
                 </div>
@@ -107,13 +108,13 @@
             <div class="row mode-selection">
                 <div class="col-md-3 mode-option">
                     <img src="img/config/tr-1.png"><br>
-                    <div class="my-radio-button active" style="margin: 15px auto">
+                    <div id="type-mode-1" class="my-radio-button active" style="margin: 15px auto">
                         <div></div>
                     </div>
                 </div>
                 <div class="col-md-3 mode-option">
                     <img src="img/config/tr-2.png"><br>
-                    <div class="my-radio-button" style="margin: 15px auto">
+                    <div id="type-mode-2" class="my-radio-button" style="margin: 15px auto">
                         <div></div>
                     </div>
                 </div>
@@ -122,13 +123,13 @@
             <ul id="complectation">
                 <li>Тип профиля:</li>
                 <li>
-                    <div class="my-radio-button active">
+                    <div id="standart-compl" class="my-radio-button active">
                         <div></div>
                     </div>
                     Стандарт
                 </li>
                 <li>
-                    <div class="my-radio-button">
+                    <div id="premium-compl" class="my-radio-button">
                         <div></div>
                     </div>
                     Премиум
@@ -137,8 +138,8 @@
             <table id="other-options">
                 <tr>
                     <td>
-                        <div class="my-radio-button">
-                            <div></div>
+                        <div class="my-radio-button-box my-radio-button">
+                            <div><span class="glyphicon glyphicon-ok"></span></div>
                         </div>
                         Отлив
                     </td>
@@ -161,8 +162,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="my-radio-button">
-                            <div></div>
+                        <div class="my-radio-button-box my-radio-button">
+                            <div><span class="glyphicon glyphicon-ok"></span></div>
                         </div>
                         Подоконник
                     </td>
@@ -185,8 +186,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="my-radio-button">
-                            <div></div>
+                        <div class="my-radio-button-box my-radio-button">
+                            <div><span class="glyphicon glyphicon-ok"></span></div>
                         </div>
                         Откосы
                     </td>
@@ -209,8 +210,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="my-radio-button">
-                            <div></div>
+                        <div class="my-radio-button-box my-radio-button">
+                            <div><span class="glyphicon glyphicon-ok"></span></div>
                         </div>
                         Монтаж
                     </td>
@@ -237,7 +238,7 @@
                 </div>
             </div>
             <div class="row price">
-                <div class="price-number"><strong>Стоимость:</strong> 10 000 руб</div>
+                <div class="price-number"><strong>Стоимость:</strong> <span id="price-final">10 000</span> руб</div>
                 <div class="col-md-6">
                     <button class="add-to-cart">В корзину</button>
                 </div>

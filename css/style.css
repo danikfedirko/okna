@@ -552,7 +552,8 @@ table tr {
     width: 20px;
     height: 20px;
     padding: 4px;
-    position: relative
+    position: relative;
+    cursor: pointer
 }
 .my-radio-button div {
     width: 90%;
@@ -561,6 +562,25 @@ table tr {
     background: #29abe2;
     opacity: 0;
     margin: auto
+}
+.my-radio-button-box {
+    border: 1.5px #29abe2 solid;
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer
+}
+.my-radio-button-box div {
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    margin: auto;
+    font-size: 13px;
+    background: none;
+    color: #29abe2
 }
 #complectation {
     list-style: none;
