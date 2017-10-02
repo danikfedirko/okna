@@ -1,5 +1,5 @@
 var price = 10000;
-var priceStep2;
+var priceStep2 = price;
 var priceStep3;
 $(document).ready(function () {
 
