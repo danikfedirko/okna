@@ -106,3 +106,6 @@ header {
 #contacts-body #top-section {
     background: url("../img/background-home.png")
 }
+#about-company .col-md-6:nth-child(2) {
+    padding: 0 15px
+}

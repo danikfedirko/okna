@@ -34,6 +34,51 @@ $(document).ready(function () {
         $("#contact-popup").hide();
     });
 
+    $("#otliv-button").click(function () {
+        if ($(".dropdown-options-menu").is(":visible")) {
+            $(".dropdown-options-menu").hide();
+            $("#otliv-list").hide();
+        } else {
+            $("#otliv-list").show();
+        }
+    });
+
+    $("#otliv-list li").click(function () {
+         var text = $(this).text();
+         $("#otliv-arg").text(text);
+         $("#otliv-list").hide()
+    });
+
+    $("#podokkonnik-button").click(function () {
+        if ($(".dropdown-options-menu").is(":visible")) {
+            $(".dropdown-options-menu").hide();
+            $("#podokkonnik-list").hide();
+        } else {
+            $("#podokkonnik-list").show();
+        }
+    });
+
+    $("#podokkonnik-list li").click(function () {
+        var text = $(this).text();
+        $("#podokkonnik-arg").text(text);
+        $("#podokkonnik-list").hide()
+    });
+
+    $("#odkosy-button").click(function () {
+        if ($(".dropdown-options-menu").is(":visible")) {
+            $(".dropdown-options-menu").hide();
+            $("#odkosy-list").hide();
+        } else {
+            $("#odkosy-list").show();
+        }
+    });
+
+    $("#odkosy-list li").click(function () {
+        var text = $(this).text();
+        $("#odkosy-arg").text(text);
+        $("#odkosy-list").hide()
+    });
+
     function portfolioSwitcher(button) {
         var text = button.innerText;
         if (text === "Все") {
