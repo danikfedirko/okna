@@ -53,6 +53,8 @@ $(document).ready(function () {
          } else {
              $("#otliv-price").text(325);
          }
+         $("#check-box-1").removeClass("active");
+         $("#price-final").text(priceStep2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
          $("#otliv-list").hide()
     });
 
@@ -75,6 +77,8 @@ $(document).ready(function () {
         } else {
             $("#podokkonnik-price").text(375);
         }
+        $("#check-box-2").removeClass("active");
+        $("#price-final").text(priceStep2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
         $("#podokkonnik-list").hide()
     });
 
@@ -97,6 +101,8 @@ $(document).ready(function () {
         } else {
             $("#odkosy-price").text(2450);
         }
+        $("#check-box-3").removeClass("active");
+        $("#price-final").text(priceStep2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
         $("#odkosy-list").hide()
     });
 

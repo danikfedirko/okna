@@ -77,9 +77,9 @@ header {
     display: block
 }
 #other-options td {
-    width: 100% !important;
-    display: block;
-    margin: 10px;
+    /*width: 100% !important;*/
+    /*display: block;*/
+    /*margin: 10px;*/
 }
 .demo-product-height, .demo-product-width {
     display: none;
@@ -108,4 +108,27 @@ header {
 }
 #about-company .col-md-6:nth-child(2) {
     padding: 0 15px
+}
+.type-option {
+    width: 50%;
+    float: left;
+    line-height: 1em;
+    padding: 10px 0
+}
+.type-option img {
+    width: auto;
+    height: 50px;
+    margin-bottom: 15px
+}
+#other-options td {
+    margin: 5px 0
+}
+#other-options td:last-child {
+    display: block;
+}
+.configurator {
+    padding: 28px 25px
+}
+#other-options .argument {
+    width: 40px
 }

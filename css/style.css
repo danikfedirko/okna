@@ -731,6 +731,9 @@ table .glyphicon {
 .dropdown-options-menu li {
     cursor: pointer;
 }
+.my-radio-button-box .glyphicon {
+    font-size: 14px
+}
 /*Calculator*/
 
 /*Pre footer*/
