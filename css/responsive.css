@@ -98,13 +98,16 @@ header {
     padding: 5%
 }
 #top-section {
-    background: url("../img/background-home.png")
+    background: url("../img/background-home.png");
+    background-size: cover
 }
 #portfolio-body #top-section {
-    background: url("../img/background-home.png")
+    background: url("../img/background-home.png");
+    background-size: cover
 }
 #contacts-body #top-section {
-    background: url("../img/background-home.png")
+    background: url("../img/background-home.png");
+    background-size: cover
 }
 #about-company .col-md-6:nth-child(2) {
     padding: 0 15px
@@ -115,6 +118,10 @@ header {
     line-height: 1em;
     padding: 10px 0
 }
+.mode-option {
+    width: 50%;
+    float: left
+}
 .type-option img {
     width: auto;
     height: 50px;
@@ -123,12 +130,14 @@ header {
 #other-options td {
     margin: 5px 0
 }
-#other-options td:last-child {
-    display: block;
-}
 .configurator {
     padding: 28px 25px
 }
 #other-options .argument {
     width: 40px
+}
+@media screen and (max-width: 425px) {
+    #other-options td:last-child {
+        display: block;
+    }
 }
