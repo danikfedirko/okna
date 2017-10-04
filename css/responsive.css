@@ -2,14 +2,6 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-#catalog .col-md-4 {
-    width: 300px;
-    height: 300px;
-    margin: 10px auto
-}
-#catalog .col-md-4:nth-child(2) {
-    margin: auto;
-}
 #pre-footer .container {
     position: static;
     background: none
@@ -17,6 +9,9 @@ html, body {
 footer li {
     width: 100%;
     margin: 10px 0
+}
+#catalog .col-md-4 {
+    height: 360px
 }
 #plastic-windows {
     padding: 40px 5px 80px 5px
@@ -136,8 +131,29 @@ header {
 #other-options .argument {
     width: 40px
 }
+.container {
+    width: 100%
+}
+#catalog {
+    padding: 0 15px
+}
+#catalog .col-md-4 {
+    width: 48%;
+    margin: 1%;
+    float: left
+}
+#catalog .col-md-4:nth-child(2) {
+    margin: 1%
+}
+#plastic-windows .col-md-6 {
+    padding: 0 35px
+}
+
 @media screen and (max-width: 425px) {
     #other-options td:last-child {
-        display: block;
+        display: block
+    }
+    #catalog .col-md-4 {
+        width: 100%
     }
 }

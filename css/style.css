@@ -422,7 +422,7 @@ table {
     color: #999999;
     margin: 40px 0
 }
-table .glyphicon {
+#contact-card table .glyphicon {
     font-size: 12px;
     padding-right: 15px
 }
